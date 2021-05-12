@@ -1,4 +1,3 @@
-## Mangan-drzq
 
 ## License
 
