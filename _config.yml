@@ -1,12 +1,12 @@
 # Site settings ...
 uri: domain.com
 url: https://domain.com
-name: Your name
-title: Mangan Jekyll Theme
-email: example@domain.com
-author: username
+name: drzq
+title: 杂录
+email: drzq14@gmail.com
+author: drzq
 keywords: "Your, Keyword, Here"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?"
+description: "The joy's always been in the discovery."
 social_username: username
 
 # Build settings ...
