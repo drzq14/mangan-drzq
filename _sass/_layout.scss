@@ -2,9 +2,9 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid $background-color;
     position: relative;
-    background-color: #F5F5F5;
+    background-color: $background-color;
     text-align: center;
 }
 
@@ -89,9 +89,8 @@
  * .big is underline style for first word or more
  */
 .big {
-    font-size: 18px;
-    background: url("/images/line.png") 0 100% no-repeat;
-    background-size: 20px;
+    font-size: 20px;
+    color: $font-color;
 }
 
 .big.plusbig {
@@ -247,20 +246,64 @@
 .post-link {
     display: block;
     font-size: 17px;
-    font-family: $vt323;
+    font-family: $base-font-family;
+}
+
+
+.index-title {
+  font-family: $base-font-family;
+  font-size: 15px; //标题字体大小
+  font-weight: bold;
+  width: 100%;
+  float: left;
+  border-bottom: 1px dashed $font-color;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  text-align: left;
+  color: $font-color;
+}
+
+.index-title-style {
+    font-weight: normal;
+    color: $font-color;
+    text-decoration: none;
+
+    &:visited {
+        color: $font-color;
+    }
+
+    &:hover {
+        color: $link-hover-color;
+        background-color: $link-hover-background-color;
+        text-decoration: underline;
+    }
+}
+
+.index-date-style {
+    color: $font-color;
+    font-family: $base-font-family;
+    font-size: 13px; //标题字体大小
+    font-weight:lighter;
+    font-style: oblique;
 }
 
 .titlepost {
+    font-family: $base-font-family;
+    font-size: 15px;
+    font-weight: bold;
     height: $spacing-unit;
-    font-family: $cutive;
-    width: 90%;
+    width: 100%;
     float: left;
-    padding-top: $spacing-unit / 6;
+    text-align: left;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed $font-color;
+    color: $font-color;
 }
 
 .datepost {
     height: $spacing-unit;
-    font-family: $vt323;
+    font-family: $base-font-family;
     width: 100px;
     float: left;
     border-bottom: 1px dashed #E1E2E3;
@@ -341,7 +384,7 @@
 
 .post-title {
     font-size: 1.5em;
-    font-family: $halant;
+    font-family: $base-font-family;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
@@ -362,7 +405,7 @@
 }
 
 .post-detail {
-    font-family: $cutive;
+    font-family: $base-font-family;
     font-size: 13.5px;
     text-align: center;
     margin-top: -10px;
@@ -370,7 +413,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    font-family: $cutive;
+    font-family: $base-font-family;
 }
 
 .post-next {
@@ -390,9 +433,9 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid $background-color;;
     padding: $spacing-unit 0;
-    background-color: #F9F9F9;
+    background-color: $background-color;;
 }
 
 .footer-heading {
@@ -424,6 +467,6 @@
 
 .footer-text {
     font-size: 14px;
-    color: #4B4B4B;
+    color: $font-color;
     text-align: center;
 }

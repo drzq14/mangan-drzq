@@ -6,10 +6,9 @@ layout: layout
       <div class="post-detail">
         {{ page.date | date_to_string }}{% if page.author %} • Written by <a href="https://github.com/{{ site.social_username }}" target="_blank" rel="noopener">{{ page.author }}</a>{% endif %}
       </div>
-      <div class="post-line"></div>
     </header>
     {{ content }}
-    <hr>
+    <br>
     <div class="post-next">{% if page.next %}
       <a href="{{ page.next.url }}">{{ page.next.title }}</a>{% endif %}
     </div>
