@@ -282,7 +282,7 @@
 .index-date-style {
     color: $font-color;
     font-family: $base-font-family;
-    font-size: 13px; //标题字体大小
+    font-size: 13px;
     font-weight:lighter;
     font-style: oblique;
 }
@@ -385,7 +385,7 @@
 .post-title {
     font-size: 1.5em;
     font-family: $base-font-family;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     line-height: 1;
     text-align: center;
     @include media-query($on-laptop) {
